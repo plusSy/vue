@@ -1,0 +1,11 @@
+.con{
+  color: red;
+}
+.button-normal{
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: gray;
+  border: 1px;
+  color: #ffffff;
+  outline: none;
+}

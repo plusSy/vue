@@ -10,6 +10,11 @@ var webpackConfig = merge(baseConfig, {
   module: {
     rules: utils.styleLoaders()
   },
+  resolve:{
+    alias:{
+      'config': path.resolve(__dirname, '../src/config/config-test.json'),
+    }
+  },
   devtool: '#inline-source-map',
   resolveLoader: {
     alias: {

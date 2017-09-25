@@ -20,6 +20,11 @@ var webpackConfig = merge(baseWebpackConfig, {
       extract: true
     })
   },
+  resolve:{
+    alias:{
+      'config': path.resolve(__dirname, '../src/config/config-prod.json'),
+    }
+  },
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
