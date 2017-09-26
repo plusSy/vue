@@ -1,14 +1,15 @@
-# vue-cli
+```bash
 
-> A Vue.js project
+vue-cli
 
-## Build Setup
+> A Vue、 Vue-Cli、 Vue-Resource、 Vue-Router、 Vuex Project
 
-``` bash
+Build Setup
+
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8077
 npm run dev
 
 # build for production with minification
