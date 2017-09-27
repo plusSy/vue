@@ -5,8 +5,10 @@ import App from './App'
 import router from './router'
 import smite from './smite'
 import store from './store'
+import http from './http'
 
 Vue.config.productionTip = false
+Vue.prototype.$http = http
 Vue.use(smite)
 
 /* eslint-disable no-new */

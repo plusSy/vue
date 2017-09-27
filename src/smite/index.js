@@ -6,6 +6,7 @@ const smite = {
       methods: {
         saveHello (a) {
           this.$store.commit('save', { id: this.$options.name, list: a })
+          sessionStorage.setItem('authorInformation', JSON.stringify({token: 'abcdefj', userId: 'ADMINISTRATOR'}))
         },
         clearHello () {
           this.$store.commit('save', { id: this.$options.name, list: null })
