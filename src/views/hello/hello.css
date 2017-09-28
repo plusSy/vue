@@ -1,5 +1,6 @@
 .con{
   color: red;
+  margin-top: 30vh;
 }
 .button-normal{
   padding: 5px 10px;
@@ -7,5 +8,14 @@
   background-color: gray;
   border: 1px;
   color: #ffffff;
+  outline: none;
+}
+
+.input-normal{
+  width: 210px;
+  height: 30px;
+  padding-left: 1%;
+  border: 1px solid #000;
+  border-radius: 3px;
   outline: none;
 }

@@ -52,6 +52,12 @@ const smite = {
           })
           console.log('filter----->')
           console.log(filter)
+        },
+        _queryBaiduMsg (data) {
+          const url = 's?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=' + data
+          this.$http.get(url, {}).then((res) => {
+
+          })
         }
       }
     })

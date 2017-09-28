@@ -5,7 +5,7 @@ import qs from 'qs'
 const { interceptors } = axios
 
 // axios.defaults.baseURL = config.baseUrl
-axios.defaults.baseURL = ''
+// axios.defaults.baseURL = 'https://www.baidu.com/s?ie=UTF-8&wd=%E5%93%88%E5%93%88%E5%93%88'
 
 let data = sessionStorage.getItem('authorInformation')
 if (data) {
