@@ -1,7 +1,9 @@
 <template>
   <div class="con">
     <h1>{{ msg }}</h1>
-    <input type="text" class="input-normal" v-model='data'>
+    <div class='div-input'>
+      <ac-input type='text' v-model='data'></ac-input>
+    </div>
     <br><br><br>
     <button class="button-normal" @click='_queryBaiduMsg(data)'>查询</button>
     <button class="button-normal" @click='saveHello(list)'>存贮数据</button>
@@ -17,7 +19,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Our Vue.js App',
+      msg: 'Welcome to Our Vue.js project 😊',
       list: '储存数据',
       data: ''
     }

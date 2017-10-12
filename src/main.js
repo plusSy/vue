@@ -7,9 +7,15 @@ import smite from './smite'
 import store from './store'
 import http from './http'
 
+import components from './components'
+
 Vue.config.productionTip = false
 Vue.prototype.$http = http
 Vue.use(smite)
+
+components.map(component => {
+  Vue.component(component.name, component)
+})
 
 /* eslint-disable no-new */
 new Vue({
