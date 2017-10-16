@@ -6,12 +6,15 @@ import router from './router'
 import smite from './smite'
 import store from './store'
 import http from './http'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
 import components from './components'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = http
 Vue.use(smite)
+Vue.use(ElementUI)
 
 components.map(component => {
   Vue.component(component.name, component)
