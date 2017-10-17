@@ -43,15 +43,13 @@
 
     <div style="width: 100%; margin-top: 30px;">
       <table border cellspacing="0" style="width: 100%">
-        <thead id='appendchild'>
-          <tr>
-            <th v-for="(th, thIdx) in tablesValues.headList" :key="thIdx" v-if="thIdx in emptyarr" rowspan="2">{{ th.colName }}</th>
-            <th v-for="(th, thIdx) in tablesValues.headList" :key="thIdx" v-if="thIdx in samilerArr" >{{ th.category }}</th>  <!-- :colspan='`${samilerArrLength + 1}`' -->
-            <th rowspan='2'>操作</th>
-          </tr>
-          <tr>
-            <th v-for="(th, thIdx) in tablesValues.headList" :key="thIdx" v-if="thIdx in samilerArr">{{ th.colName }}</th>
-          </tr>
+        <thead>
+        <tr>
+          <th v-for="item in one" :rowspan="item.category ? null : 2" :colspan="item.colspan">{{item.colName}}</th>
+        </tr>
+        <tr>
+          <th v-for="item in two">{{item.colName}}</th>
+        </tr>
         </thead>
         <tbody>
           <tr>
@@ -64,7 +62,7 @@
 </template>
 
 <script>
-  import * as data from './element.json'
+  import * as conTable from './element.json'
   export default {
     data () {
       return {
@@ -72,51 +70,57 @@
         tablesValues: [],
         emptyarr: [],
         samilerArr: [],
-        samilerArrLength: null
+        samilerArrLength: null,
+        one: [],
+        two: []
       }
     },
     created () {
-      this.title = data.titles
-      this.lists = data.tableData
-      this.tablesValues = data.tablesValues
+      this.title = conTable.titles
+      this.lists = conTable.tableData
+      this.tablesValues = conTable.tablesValues
       // console.log(data.tablesValues)
-      this._coTehead()
+      this._dealThead()
     },
     methods: {
-      _coTehead () {
+      _dealThead () {
         let headList = this.tablesValues.headList
-        let emptyarr = []
-        let samilerArr = []
-        let newSamilerArr = []
-        headList.forEach((value, index, array) => {
-          if (value.category === '') {
-            emptyarr.push(index)
-          } else if (value.category && array[index].category === array[index - 1].category) {
-            samilerArr.push(index - 1)
-            samilerArr.push(index)
-          }
-        })
-        samilerArr.forEach((value, index) => {
-          for (let i = 0; i < samilerArr.length; i++) {
-            if (newSamilerArr.indexOf(samilerArr[i]) === -1) {
-              newSamilerArr.push(samilerArr[i])
+        const one = []
+        const two = []
+        headList.forEach((item, index) => {
+          item.colspan = 1
+          if (index > 0 && one.length > 0) {
+            if (item.category) {
+              two.push(item)
+              console.log('Two一层', index, two)
             }
+            if (item.category && item.category === one[one.length - 1].category) {
+              one[one.length - 1].colspan++
+            } else {
+              one.push(item)
+              console.log('One两层', index, one)
+            }
+          } else {
+            one.push(item)
+            console.log('One一层', index, one)
           }
-          headList[value].category = ''
         })
-        samilerArr = newSamilerArr
-        emptyarr.forEach((value) => {
-          headList[value].category = headList[value].colName
-        })
-        this.emptyarr = emptyarr
-        this.samilerArr = samilerArr
-        this.samilerArrLength = samilerArr.length
-        console.log('空的', emptyarr)
-        console.log('有的', samilerArr)
-        console.log(headList)
-        // document.getElementById('appendchild').appendchild('tr')
-        // let trCon = document.getElementById('appendchild')
-        // console.log(trCon)
+        // console.log('afterHeadListForEachOne', one)
+        // console.log('afterHeadListForEachTwo', two)
+        // let a = {}
+        // one.forEach((value, index) => {
+        //   a = one[one.length - 1]
+        //   one[one.length - 1].colName = one[one.length - 1].category
+        // })
+        // console.log('afterOneForEach', a)
+        // two.forEach((value, index) => {
+        //   two[0] = a
+        // })
+        // console.log('afterTwoForEach', a)
+        console.log('finishedOne', one)
+        console.log('finishedTwo', two)
+        this.one = one
+        this.two = two
       }
     }
   }
