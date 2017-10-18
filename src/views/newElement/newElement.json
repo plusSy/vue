@@ -1,0 +1,54 @@
+{
+  "tableData": [
+    {
+      "date": "2016-05-03",
+      "name": "王小虎",
+      "province": "上海",
+      "city": "普陀区",
+      "address": "上海市普陀区金沙江路 1518 弄",
+      "zip": 200333
+    },
+    {
+      "date": "2016-05-02",
+      "name": "王小虎",
+      "province": "上海",
+      "city": "普陀区",
+      "address": "上海市普陀区金沙江路 1518 弄",
+      "zip": 200333
+    }
+  ],
+  "tablesValues": {
+    "headList": [
+      {
+        "thIdx": 0,
+        "colName": "日期",
+        "category": ""
+      },
+      {
+        "thIdx": 1,
+        "colName": "姓名",
+        "category": ""
+      },
+      {
+        "thIdx": 2,
+        "colName": "省份",
+        "category": "地址"
+      },
+      {
+        "thIdx": 3,
+        "colName": "市区",
+        "category": "地址"
+      },
+      {
+        "thIdx": 4,
+        "colName": "地址",
+        "category": "地址"
+      },
+      {
+        "thIdx": 5,
+        "colName": "邮编",
+        "category": "地址"
+      }
+    ]
+  }
+}
