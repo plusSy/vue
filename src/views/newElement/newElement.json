@@ -48,6 +48,21 @@
         "thIdx": 5,
         "colName": "邮编",
         "category": "地址"
+      },
+      {
+        "thIdx": 6,
+        "colName": "操作",
+        "category": "业务流程"
+      },
+      {
+        "thIdx": 7,
+        "colName": "操作b",
+        "category": "业务流程"
+      },
+      {
+        "thIdx": 8,
+        "colName": "性别",
+        "category": ""
       }
     ]
   }

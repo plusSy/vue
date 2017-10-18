@@ -45,7 +45,14 @@
       <table border cellspacing="0" style="width: 100%">
         <thead>
         <tr>
-          <th v-for="item in one" :rowspan="item.category ? null : 2" :colspan="item.colspan">{{item.colName}}</th>
+          <th v-for="item in one" :rowspan="item.fatherColName ? null : 2" :colspan="item.colspan">
+            <template v-if="item.colspan > 1">
+              {{item.fatherColName}}
+            </template>
+            <template v-else>
+              {{item.colName}}
+            </template>
+          </th>
         </tr>
         <tr>
           <th v-for="item in two">{{item.colName}}</th>
@@ -90,33 +97,18 @@
         headList.forEach((item, index) => {
           item.colspan = 1
           if (index > 0 && one.length > 0) {
-            if (item.category) {
+            if (item.fatherColName) {
               two.push(item)
-              console.log('Two一层', index, two)
             }
-            if (item.category && item.category === one[one.length - 1].category) {
+            if (item.fatherColName && item.fatherColName === one[one.length - 1].fatherColName) {
               one[one.length - 1].colspan++
             } else {
               one.push(item)
-              console.log('One两层', index, one)
             }
           } else {
             one.push(item)
-            console.log('One一层', index, one)
           }
         })
-        // console.log('afterHeadListForEachOne', one)
-        // console.log('afterHeadListForEachTwo', two)
-        // let a = {}
-        // one.forEach((value, index) => {
-        //   a = one[one.length - 1]
-        //   one[one.length - 1].colName = one[one.length - 1].category
-        // })
-        // console.log('afterOneForEach', a)
-        // two.forEach((value, index) => {
-        //   two[0] = a
-        // })
-        // console.log('afterTwoForEach', a)
         console.log('finishedOne', one)
         console.log('finishedTwo', two)
         this.one = one

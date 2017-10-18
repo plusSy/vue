@@ -22,32 +22,56 @@
       {
         "thIdx": 0,
         "colName": "日期",
-        "category": ""
+        "fatherColName": "",
+        "colShowYn": "1"
       },
       {
         "thIdx": 1,
         "colName": "姓名",
-        "category": ""
+        "fatherColName": "",
+        "colShowYn": "1"
       },
       {
         "thIdx": 2,
         "colName": "省份",
-        "category": "地址"
+        "fatherColName": "地址",
+        "colShowYn": "1"
       },
       {
         "thIdx": 3,
         "colName": "市区",
-        "category": "地址"
+        "fatherColName": "地址",
+        "colShowYn": "1"
       },
       {
         "thIdx": 4,
         "colName": "地址",
-        "category": "地址"
+        "fatherColName": "地址",
+        "colShowYn": "1"
       },
       {
         "thIdx": 5,
         "colName": "邮编",
-        "category": "地址"
+        "fatherColName": "地址",
+        "colShowYn": "1"
+      },
+      {
+        "thIdx": 6,
+        "colName": "操作",
+        "fatherColName": "业务流程",
+        "colShowYn": "1"
+      },
+      {
+        "thIdx": 7,
+        "colName": "操作b",
+        "fatherColName": "业务流程",
+        "colShowYn": "1"
+      },
+      {
+        "thIdx": 8,
+        "colName": "性别",
+        "fatherColName": "",
+        "colShowYn": "1"
       }
     ]
   }
