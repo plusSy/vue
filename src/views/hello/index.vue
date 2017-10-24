@@ -2,7 +2,9 @@
   <div class="con">
     <h1>{{ msg }}</h1>
     <div class='div-input'>
-      <ac-input type='text' v-model='data'></ac-input>
+      <ac-input
+        type='text'
+        v-model='data'></ac-input>
     </div>
     <br><br><br>
     <button class="button-normal" @click='_queryBaiduMsg(data)'>查询</button>

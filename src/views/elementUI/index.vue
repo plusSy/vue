@@ -109,8 +109,8 @@
             one.push(item)
           }
         })
-        console.log('finishedOne', one)
-        console.log('finishedTwo', two)
+        // console.log('finishedOne', one)
+        // console.log('finishedTwo', two)
         this.one = one
         this.two = two
       }
