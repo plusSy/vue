@@ -1,0 +1,42 @@
+.btn{
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid #000;
+  cursor: pointer;
+  outline: none;
+}
+.foot{
+  margin: 30px 0;
+}
+.table table{
+  margin: 0 auto;
+}
+.table table tr th{
+  width: 80px;
+}
+.mock{
+  margin-top: 100px;
+}
+.conLi{
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 0 10px 0 0;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.conLi:hover{
+  background-color: #666;
+  color: #ffffff;
+}
+.active{
+  background-color: #888888;
+  color: #ffffff;
+}
+.conDiv{
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  min-height: 200px;
+  border: 1px solid #333;
+  padding: 10px;
+}

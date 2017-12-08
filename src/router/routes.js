@@ -2,6 +2,7 @@ const Hello = () => import('@/views/hello/index.vue')
 const Mocks = () => import('@/views/mock')
 const elementUI = () => import('@/views/elementUI')
 const newElement = () => import('@/views/newElement/newIndex')
+const NewMock = () => import('@/views/newMock')
 
 const routes = [
   {
@@ -23,6 +24,11 @@ const routes = [
     path: '/newElement',
     name: 'newElement',
     component: newElement
+  },
+  {
+    path: '/mock2',
+    name: 'mock2',
+    component: NewMock
   }
 ]
 
