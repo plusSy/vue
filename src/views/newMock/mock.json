@@ -1,98 +1,93 @@
 {
-    "id": null,
-    "cmsPageVersionId": "1",
-    "cmsPackageId": "147",
-    "name": "组件名字",
-    "componentList": [
-      {
-        "id": "6344802745035259904",
-        "cmsPageVersionId": "1",
-        "sortNumber": "排序方式",
-        "codeValue": "C001",
-        "componentName": "单件名字1",
-        "description": null,
-        "cmsPageTitleList": [
-          {
-            "name": "姓名",
-            "title": "name"
-          },
-          {
-            "name": "年纪",
-            "title": "age"
-          }
-        ],
-        "pageValueList": [
-          {
-            "id": "6331016361371762688",
-            "contentCode": "6330957435125104641",
-            "title": "name",
-            "userType": "1001",
-            "isAdvertisement": 1,
-            "isBlacklist": 0,
-            "cmsPageStructureId": "6282461348987142144",
-            "createUserId": "6282475546441945088",
-            "createTime": 1509431721000,
-            "author": "作者aaa"
-          },
-          {
-            "id": "6331016361371762688",
-            "contentCode": "6330957435125104641",
-            "title": "age",
-            "userType": "1001",
-            "isAdvertisement": 1,
-            "isBlacklist": 0,
-            "cmsPageStructureId": "6282461348987142144",
-            "createUserId": "6282475546441945088",
-            "createTime": 1509431721000,
-            "author": "作者aaa"
-          }
-        ]
-      },
-      {
-        "id": "6344802745035259904",
-        "cmsPageVersionId": "1",
-        "sortNumber": "排序方式",
-        "codeValue": "C002",
-        "componentName": "单件名字2",
-        "description": null,
-        "cmsPageTitleList": [
-          {
-            "name": "姓名",
-            "title": "name"
-          },
-          {
-            "name": "年玲",
-            "title": "age"
-          }
-        ],
-        "pageValueList": [
-          {
-            "id": "6331016361371762688",
-            "contentCode": "6330957435125104641",
-            "title": "name",
-            "userType": "1001",
-            "isAdvertisement": 1,
-            "isBlacklist": 0,
-            "cmsPageStructureId": "6282461348987142144",
-            "createUserId": "6282475546441945088",
-            "createTime": 1509431721000,
-            "name": "小明",
-            "age": 17
-          },
-          {
-            "id": "6331016361371762688",
-            "contentCode": "6330957435125104641",
-            "title": "age",
-            "userType": "1001",
-            "isAdvertisement": 1,
-            "isBlacklist": 0,
-            "cmsPageStructureId": "6282461348987142144",
-            "createUserId": "6282475546441945088",
-            "createTime": 1509431721000,
-            "name": "张三",
-            "age": 19
-          }
-        ]
-      }
-    ]
-  }
+  "id": null,
+  "cmsPageVersionId": "1",
+  "cmsPackageId": "147",
+  "name": "组件名字",
+  "componentList": [{
+      "id": "6344802745035259904",
+      "cmsPageVersionId": "1",
+      "sortNumber": "排序方式",
+      "codeValue": "C001",
+      "componentName": "单件名字1",
+      "description": null,
+      "cmsPageTitleList": [{
+          "name": "姓名",
+          "title": "name"
+        },
+        {
+          "name": "年纪",
+          "title": "age"
+        }
+      ],
+      "pageValueList": [{
+          "id": "6331016361371762688",
+          "contentCode": "6330957435125104641",
+          "title": "name",
+          "userType": "1001",
+          "isAdvertisement": 1,
+          "isBlacklist": 0,
+          "cmsPageStructureId": "6282461348987142144",
+          "createUserId": "6282475546441945088",
+          "createTime": 1509431721000,
+          "author": "作者aaa"
+        },
+        {
+          "id": "6331016361371762688",
+          "contentCode": "6330957435125104641",
+          "title": "age",
+          "userType": "1001",
+          "isAdvertisement": 1,
+          "isBlacklist": 0,
+          "cmsPageStructureId": "6282461348987142144",
+          "createUserId": "6282475546441945088",
+          "createTime": 1509431721000,
+          "author": "作者aaa"
+        }
+      ]
+    },
+    {
+      "id": "6344802745035259904",
+      "cmsPageVersionId": "1",
+      "sortNumber": "排序方式",
+      "codeValue": "C002",
+      "componentName": "单件名字2",
+      "description": null,
+      "cmsPageTitleList": [{
+          "name": "姓名",
+          "title": "name"
+        },
+        {
+          "name": "年龄",
+          "title": "age"
+        }
+      ],
+      "pageValueList": [{
+          "id": "6331016361371762688",
+          "contentCode": "6330957435125104641",
+          "title": "name",
+          "userType": "1001",
+          "isAdvertisement": 1,
+          "isBlacklist": 0,
+          "cmsPageStructureId": "6282461348987142144",
+          "createUserId": "6282475546441945088",
+          "createTime": 1509431721000,
+          "name": "小明",
+          "age": 17
+        },
+        {
+          "id": "6331016361371762688",
+          "contentCode": "6330957435125104641",
+          "title": "age",
+          "userType": "1001",
+          "isAdvertisement": 1,
+          "isBlacklist": 0,
+          "cmsPageStructureId": "6282461348987142144",
+          "createUserId": "6282475546441945088",
+          "createTime": 1509431721000,
+          "name": "张三",
+          "age": 19
+        }
+      ]
+    }
+  ]
+}

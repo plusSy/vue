@@ -1,6 +1,5 @@
 {
-  "tableData": [
-    {
+  "tableData": [{
       "date": "2016-05-03",
       "name": "王小虎",
       "province": "上海",
@@ -18,8 +17,7 @@
     }
   ],
   "tablesValues": {
-    "headList": [
-      {
+    "headList": [{
         "thIdx": 0,
         "colName": "日期",
         "fatherColName": "",
