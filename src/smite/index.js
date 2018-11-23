@@ -5,11 +5,22 @@ const smite = {
     Vue.mixin({
       methods: {
         saveHello (a) {
-          this.$store.commit('save', { id: this.$options.name, list: a })
-          sessionStorage.setItem('authorInformation', JSON.stringify({token: 'abcdefj', userId: 'ADMINISTRATOR'}))
+          this.$store.commit('save', {
+            id: this.$options.name,
+            list: a
+          })
+          sessionStorage.setItem('authorInformation', JSON.stringify({
+            token: 'abcdefj',
+            userId: 'ADMINISTRATOR'
+          }))
+          console.log('储存成功', this.$store.state.lists)
         },
         clearHello () {
-          this.$store.commit('save', { id: this.$options.name, list: null })
+          this.$store.commit('save', {
+            id: this.$options.name,
+            list: null
+          })
+          console.log('清除成功', this.$store.state.lists)
         },
         _ArrayProcessing () {
           // some、every、filter、forEach、map 对数组进行操作，接受三个参数（item,index,array）数组当前项对应的值，数组当前项的下标，数组
@@ -33,7 +44,7 @@ const smite = {
           // forEach 直接处理当前数组 对遍历的数组里面的数据进行计算
           let newforEach = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
           newforEach.forEach((item, index, array) => {
-            if (index === 0) { console.log('forEach----->') }
+            if (index === 0) console.log('forEach----->')
             console.log(item + 1)
           })
 

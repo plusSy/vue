@@ -8,6 +8,8 @@ const newElement = () =>
   import('@/views/newElement/newIndex')
 const NewMock = () =>
   import('@/views/newMock')
+const ES6Demo = () =>
+  import('@/views/function/es6-demo/es6.vue')
 
 const routes = [{
   path: '/',
@@ -33,6 +35,11 @@ const routes = [{
   path: '/mock2',
   name: 'mock2',
   component: NewMock
+},
+{
+  path: '/es6Demo',
+  name: 'es6Demo',
+  component: ES6Demo
 }
 ]
 
