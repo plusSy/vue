@@ -9,12 +9,21 @@
     <button class="button-normal" @click='saveHello(list)'>存贮数据</button>
     <button class="button-normal" @click='clearHello'>删除数据</button>
     <button class="button-normal" @click='_ArrayProcessing'>测试过滤条件</button>
+    <button class="button-normal" @click='changePagination'>改变vuexPagination</button>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <div class="pagination">
+      {{ pagination }}
+    </div>
   </div>
 </template>
 
 <style src="./hello.css" scoped></style>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'hello',
   data () {
@@ -22,6 +31,18 @@ export default {
       msg: 'Welcome to Our Vue.js project 😊',
       list: '储存数据',
       data: ''
+    }
+  },
+  computed: {
+    ...mapState({
+      pagination: (state) => {
+        return state.pagination
+      }
+    })
+  },
+  methods: {
+    changePagination () {
+      this.$store.commit('changePagination', {})
     }
   }
 }

@@ -1,13 +1,13 @@
 <template>
   <input
-  class="form-input"
-  :disabled="disabled"
-  :type="type"
-  :value="value"
-  :placeholder="placeholder"
-  @input="inputVlue($event.target.value)"
-  @blur='handleBlur'
->
+    class="form-input"
+    :disabled="disabled"
+    :type="type"
+    :value="value"
+    :placeholder="placeholder"
+    @input="inputVlue($event.target.value)"
+    @blur='handleBlur'
+  >
 </template>
 <style src="./input.css" lang="css" scoped></style>
 <script>
