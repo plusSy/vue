@@ -10,6 +10,7 @@ const NewMock = () =>
   import('@/views/newMock')
 const ES6Demo = () =>
   import('@/views/function/es6-demo/es6.vue')
+const Validate = () => import('@/views/validate/index')
 
 const routes = [{
   path: '/',
@@ -40,6 +41,11 @@ const routes = [{
   path: '/es6Demo',
   name: 'es6Demo',
   component: ES6Demo
+},
+{
+  path: '/validate',
+  name: 'validate',
+  component: Validate
 }
 ]
 
