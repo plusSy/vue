@@ -11,6 +11,9 @@ const NewMock = () =>
 const ES6Demo = () =>
   import('@/views/function/es6-demo/es6.vue')
 const Validate = () => import('@/views/validate/index')
+const RouterCom = () => import('@/views/routerCom/index')
+const RouterComA = () => import('@/views/routerCom/child/a')
+const RouterComB = () => import('@/views/routerCom/child/b')
 
 const routes = [{
   path: '/',
@@ -46,6 +49,23 @@ const routes = [{
   path: '/validate',
   name: 'validate',
   component: Validate
+},
+{
+  path: '/router',
+  name: 'router',
+  component: RouterCom,
+  children: [
+    {
+      path: '/router/a',
+      name: 'a',
+      component: RouterComA
+    },
+    {
+      path: '/router/b',
+      name: 'b',
+      component: RouterComB
+    }
+  ]
 }
 ]
 
