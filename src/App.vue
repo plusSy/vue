@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <el-button @click="changeRoute('/router')">改变路由到route</el-button>
-    <el-button @click="changeRoute('/router/a')">改变路由到route/a</el-button>
-    <el-button @click="changeRoute('/router/b')">改变路由到route/b</el-button>
-    <el-button @click="changeRoute('/')">改变路由到根</el-button>
-    <el-button @click="changeRoute('/mock')">改变路由到mock</el-button>
+    <el-button @click="changeRoute('/router')">route</el-button>
+    <el-button @click="changeRoute('/router/a')">route/a</el-button>
+    <el-button @click="changeRoute('/router/b')">route/b</el-button>
+    <el-button @click="changeRoute('/')">home</el-button>
+    <el-button @click="changeRoute('/mock')">mock</el-button>
+    <el-button @click="changeRoute('/infinite')">infinite</el-button>
     <router-view></router-view>
   </div>
 </template>
@@ -22,11 +23,16 @@ export default {
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  font-size: 12px;
 }
 </style>

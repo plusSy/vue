@@ -14,6 +14,7 @@ const Validate = () => import('@/views/validate/index')
 const RouterCom = () => import('@/views/routerCom/index')
 const RouterComA = () => import('@/views/routerCom/child/a')
 const RouterComB = () => import('@/views/routerCom/child/b')
+const Infinite = () => import('@/views/infinite')
 
 const routes = [{
   path: '/',
@@ -49,6 +50,11 @@ const routes = [{
   path: '/validate',
   name: 'validate',
   component: Validate
+},
+{
+  path: '/infinite',
+  name: 'infinite',
+  component: Infinite
 },
 {
   path: '/router',
