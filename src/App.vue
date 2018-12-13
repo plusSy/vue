@@ -7,6 +7,7 @@
     <el-button @click="changeRoute('/')">home</el-button>
     <el-button @click="changeRoute('/mock')">mock</el-button>
     <el-button @click="changeRoute('/infinite')">infinite</el-button>
+    <el-button @click="changeRoute('/sort')">sort</el-button>
     <router-view></router-view>
   </div>
 </template>
