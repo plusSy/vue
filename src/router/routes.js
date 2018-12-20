@@ -16,6 +16,7 @@ const RouterComA = () => import('@/views/routerCom/child/a')
 const RouterComB = () => import('@/views/routerCom/child/b')
 const Infinite = () => import('@/views/infinite')
 const Sort = () => import('@/views/sortData')
+const TableFilter = () => import('@/views/tableFilter')
 
 const routes = [{
   path: '/',
@@ -78,6 +79,11 @@ const routes = [{
   path: '/sort',
   name: 'sort',
   component: Sort
+},
+{
+  path: '/tableFilter',
+  name: 'tableFilter',
+  component: TableFilter
 }
 ]
 

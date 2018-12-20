@@ -23,7 +23,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(cell,index) in list" class="tr-normal">
+        <tr v-for="(cell,index) in list" class="tr-normal" :key="index">
           <td>{{index+1}}</td>
           <td>
             <input type="checkbox" name="" value="cell">
