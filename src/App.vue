@@ -24,7 +24,9 @@ export default {
         {link: 'mock', name: 'mock'},
         {link: 'sort', name: 'sort'},
         {link: 'infinite', name: 'infinite'},
-        {link: 'tableFilter', name: 'tableFilter'}
+        // {link: 'tableFilter', name: 'tableFilter'},
+        {link: 'tableMock', name: 'tableMock'}
+
       ]
     }
   },

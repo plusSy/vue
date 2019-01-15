@@ -17,6 +17,7 @@ const RouterComB = () => import('@/views/routerCom/child/b')
 const Infinite = () => import('@/views/infinite')
 const Sort = () => import('@/views/sortData')
 const TableFilter = () => import('@/views/tableFilter')
+const TableMock = () => import('@/views/tableMock')
 
 const routes = [{
   path: '/',
@@ -84,6 +85,11 @@ const routes = [{
   path: '/tableFilter',
   name: 'tableFilter',
   component: TableFilter
+},
+{
+  path: '/tableMock',
+  name: 'tableMock',
+  component: TableMock
 }
 ]
 

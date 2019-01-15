@@ -87,6 +87,7 @@ export default {
       })
       this.baseData = baseData
       this.multipleSelection = val
+      this.setSelectStatus()
     }
   }
 }
