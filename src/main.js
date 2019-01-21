@@ -6,6 +6,7 @@ import router from './router'
 import smite from './smite'
 import store from './store'
 import http from './http'
+import * as filters from './filter'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 
@@ -15,6 +16,10 @@ Vue.config.productionTip = false
 Vue.prototype.$http = http
 Vue.use(smite)
 Vue.use(ElementUI)
+
+Object.keys(filters).forEach((key) => {
+  Vue.filter(key, filters[key])
+})
 
 components.map(component => {
   Vue.component(component.name, component)

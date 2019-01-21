@@ -4,6 +4,10 @@
     routerCom: {{ new Date() }}
 
     <router-view></router-view>
+
+    人民币: {{ 20 | MoneyFilter('￥') }}
+    <br>
+    美元: {{ 20 | MoneyFilter('$') }}
   </div>
 </template>
 
@@ -18,6 +22,12 @@ export default {
   },
   mounted () {
     console.log('变了没?', +new Date())
+  },
+  filters: {
+    moneyFilter (val, type) {
+      console.log('val', val)
+      return `${type}${val}`
+    }
   }
 }
 </script>
