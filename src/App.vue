@@ -25,7 +25,8 @@ export default {
         {link: 'sort', name: 'sort'},
         {link: 'infinite', name: 'infinite'},
         // {link: 'tableFilter', name: 'tableFilter'},
-        {link: 'tableMock', name: 'tableMock'}
+        {link: 'tableMock', name: 'tableMock'},
+        {link: 'templateRender', name: 'templateRender'}
 
       ]
     }

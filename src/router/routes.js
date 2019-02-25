@@ -19,6 +19,8 @@ const Sort = () => import('@/views/sortData')
 const TableFilter = () => import('@/views/tableFilter')
 const TableMock = () => import('@/views/tableMock')
 
+const TemplateRender = () => import('@/views/templateRender')
+
 const routes = [{
   path: '/',
   name: 'Hello',
@@ -90,6 +92,11 @@ const routes = [{
   path: '/tableMock',
   name: 'tableMock',
   component: TableMock
+},
+{
+  path: '/templateRender',
+  name: 'templateRender',
+  component: TemplateRender
 }
 ]
 
