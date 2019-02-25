@@ -1,31 +1,11 @@
-```bash
+### Vue项目日常功能点集合
 
-vue-cli
+- vue-router demo
+- vuex demo
+- 排序
+- 无限加载(infinite)
+- 根据数据渲染table表格 
+- 根据后台数据渲染form表单
+  - 支持校验
+  - 支持多种类型
 
-> A Vue、 Vue-Cli、 Vue-Resource、 Vue-Router、 Vuex Project
-
-Build Setup
-
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8077
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
