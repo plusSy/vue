@@ -41,7 +41,6 @@
             <el-radio-group
               :value="cateAttrFilter[item.attrDescCode]"
               :disabled="item.attrEditYn === '0'"
-              @change="handleLinkAttrVal(item, $event)"
               @input="handleValueChange('cateAttrFilter', $event, index, item.attrDescCode, 'RADIO')">
               <el-radio v-for="(cell, cellIdx) in item.dictValues  " :label="cell.dictValueCode" :key="cellIdx">{{ cell.dictValue }}</el-radio>
             </el-radio-group>
@@ -53,7 +52,6 @@
               :value="cateAttrFilter[item.attrDescCode]"
               placeholder="请选择"
               :disabled="item.attrEditYn === '0'"
-              @change="handleLinkAttrVal(item, $event)"
               @input="handleValueChange('cateAttrFilter', $event, index, item.attrDescCode, 'SELECT')">
               <el-option v-for="item in item.dictValues" :key="item.dictValue" :label="item.dictValue" :value="item.dictValueCode">
               </el-option>
@@ -100,6 +98,26 @@ export default {
           display: true,
           disabled: false,
           attrNullYn: '1'
+        },
+        {
+          attrName: '测试Radio',
+          attrDescCode: 'TM-002',
+          attrValue: '',
+          attrMaintMed: 'RADIO',
+          attrEditYn: '1',
+          display: true,
+          disabled: false,
+          attrNullYn: '1',
+          dictValues: [
+            {
+              dictValueCode: '0',
+              dictValue: '否'
+            },
+            {
+              dictValueCode: '1',
+              dictValue: '是'
+            }
+          ]
         }
       ]
     }
@@ -141,10 +159,9 @@ export default {
       val = ['CHECKBOX', 'RADIO', 'DATE', 'SELECT'].includes(type) ? val : val.target.value
       this[objName][keyCode] = val
       this.cateAttrFormData[key].attrValue = val
-
+      this.$forceUpdate()
       console.log('值变更')
     }
   }
 }
 </script>
-
