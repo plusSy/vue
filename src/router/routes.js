@@ -18,6 +18,7 @@ const Infinite = () => import('@/views/infinite')
 const Sort = () => import('@/views/sortData')
 const TableFilter = () => import('@/views/tableFilter')
 const TableMock = () => import('@/views/tableMock')
+const Echarts = () => import('@/views/echarts')
 
 const TemplateRender = () => import('@/views/templateRender')
 
@@ -97,6 +98,11 @@ const routes = [{
   path: '/templateRender',
   name: 'templateRender',
   component: TemplateRender
+},
+{
+  path: '/echarts',
+  name: 'echarts',
+  component: Echarts
 }
 ]
 

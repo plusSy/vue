@@ -10,10 +10,15 @@ import * as filters from './filter'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 
+import echarts from 'echarts'
+
 import components from './components'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = http
+
+Vue.prototype.$echarts = echarts
+
 Vue.use(smite)
 Vue.use(ElementUI)
 

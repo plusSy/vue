@@ -19,7 +19,8 @@
     "qs": "^6.5.1",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
-    "vuex": "^2.4.0"
+    "vuex": "^2.4.0",
+    "echarts": "^4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -40,7 +41,6 @@
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
     "cssnano": "^3.10.0",
-    "echarts": "^4.2.0-rc.2",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-friendly-formatter": "^3.0.0",

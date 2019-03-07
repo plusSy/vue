@@ -26,7 +26,8 @@ export default {
         {link: 'infinite', name: 'infinite'},
         // {link: 'tableFilter', name: 'tableFilter'},
         {link: 'tableMock', name: 'tableMock'},
-        {link: 'templateRender', name: 'templateRender'}
+        {link: 'templateRender', name: 'templateRender'},
+        {link: 'echarts', name: 'echarts'}
 
       ]
     }
