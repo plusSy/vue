@@ -27,7 +27,8 @@ export default {
         // {link: 'tableFilter', name: 'tableFilter'},
         {link: 'tableMock', name: 'tableMock'},
         {link: 'templateRender', name: 'templateRender'},
-        {link: 'echarts', name: 'echarts'}
+        {link: 'echarts', name: 'echarts'},
+        {link: 'nest', name: 'nest'}
 
       ]
     }

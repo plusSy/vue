@@ -21,6 +21,7 @@ const TableMock = () => import('@/views/tableMock')
 const Echarts = () => import('@/views/echarts')
 
 const TemplateRender = () => import('@/views/templateRender')
+const Nest = () => import('@/views/nest')
 
 const routes = [{
   path: '/',
@@ -103,6 +104,11 @@ const routes = [{
   path: '/echarts',
   name: 'echarts',
   component: Echarts
+},
+{
+  path: '/nest',
+  name: 'nest',
+  component: Nest
 }
 ]
 
