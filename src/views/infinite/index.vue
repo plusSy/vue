@@ -9,6 +9,7 @@
           <AcLoader :text="localLoaderText"></AcLoader>
         </template>
       </AcInfinite>
+      <div id="tip" style="width: 100%; height: 1000px; background-color: red;">tip</div>
     </AcFilter>
     <template>
       <div v-if="ceil" :class="{'stick' : ceil}">
@@ -50,6 +51,12 @@ export default {
       ],
       rangeData: 100
     }
+  },
+  mounted () {
+    let a = document.createElement('a')
+    a.href = this.$route.hash
+    a.click()
+    a = null
   },
   methods: {
     refresh () {

@@ -12,6 +12,9 @@
     <button class="button-normal" @click='changePagination'>改变vuexPagination</button>
 
     <button id="jqDemo" class="button-normal" @click='_Jquery'>Jquery</button>
+
+    <button class="button-normal" @click='BtnJump'>BtnJump</button>
+
     <br><br><br>
     <hr>
     <br><br><br>
@@ -50,6 +53,9 @@ export default {
       this.jQuery('#jqDemo').css({
         color: 'red'
       })
+    },
+    BtnJump () {
+      this.$router.push('/infinite#tip')
     }
   }
 }
