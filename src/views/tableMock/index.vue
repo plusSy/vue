@@ -2,7 +2,7 @@
   <div>
     <el-table :data="tableData">
       <template  v-for="(item, index) in dataKey">
-        <el-table-column :prop="item"  :key="index" :label="item" v-if="item !== 'list'"></el-table-column>
+        <el-table-column :prop="item" :key="index" :label="item" v-if="item !== 'list'"></el-table-column>
       </template>
     </el-table>
   </div>
@@ -22,7 +22,8 @@ export default {
             {question1: '20'},
             {question2: '40'},
             {question3: '50'},
-            {question4: '60'}
+            {question4: '60'},
+            {question5: '60'}
           ]
         },
         {
@@ -34,6 +35,19 @@ export default {
             {question1: '20'},
             {question2: '40'},
             {question3: '50'}
+          ]
+        },
+        {
+          account: '123',
+          costTime: '2019-2-2',
+          examTime: '30',
+          score: '100',
+          list: [
+            {question1: '20'},
+            {question2: '40'},
+            {question3: '50'},
+            {question4: '60'},
+            {question5: '60'}
           ]
         }
       ]

@@ -9,13 +9,18 @@ import http from './http'
 import * as filters from './filter'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
+// 外部文件引用
+import $ from 'jquery'
 
 import echarts from 'echarts'
 
 import components from './components'
 
 Vue.config.productionTip = false
+
+// 全局注册
 Vue.prototype.$http = http
+Vue.prototype.jQuery = $
 
 Vue.prototype.$echarts = echarts
 
