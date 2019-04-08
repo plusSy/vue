@@ -10,6 +10,8 @@
     <button class="button-normal" @click='clearHello'>删除数据</button>
     <button class="button-normal" @click='_ArrayProcessing'>测试过滤条件</button>
     <button class="button-normal" @click='changePagination'>改变vuexPagination</button>
+
+    <button id="jqDemo" class="button-normal" @click='_Jquery'>Jquery</button>
     <br><br><br>
     <hr>
     <br><br><br>
@@ -43,6 +45,11 @@ export default {
   methods: {
     changePagination () {
       this.$store.commit('changePagination', {})
+    },
+    _Jquery () {
+      this.jQuery('#jqDemo').css({
+        color: 'red'
+      })
     }
   }
 }
