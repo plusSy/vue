@@ -15,12 +15,18 @@
 
     <button class="button-normal" @click='BtnJump'>BtnJump</button>
 
+    <button class="button-normal" @click='openMoal()'>openMoal</button>
+
+
+
     <br><br><br>
     <hr>
     <br><br><br>
     <div class="pagination">
       {{ pagination }}
     </div>
+
+    <componte :is="modal" @close="close" :injectData="injectData"></componte>
   </div>
 </template>
 
@@ -28,14 +34,20 @@
 
 <script>
 import { mapState } from 'vuex'
+import ChildModal from './../modalType/index'
 
 export default {
   name: 'hello',
+  components: {
+    ChildModal
+  },
   data () {
     return {
+      modal: null,
       msg: 'Welcome to Our Vue.js project 😊',
       list: '储存数据',
-      data: ''
+      data: '',
+      injectData: {}
     }
   },
   computed: {
@@ -56,6 +68,12 @@ export default {
     },
     BtnJump () {
       this.$router.push('/infinite#tip')
+    },
+    openMoal () {
+      this.modal = ChildModal
+    },
+    close () {
+      this.modal = null
     }
   }
 }
