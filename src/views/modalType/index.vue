@@ -15,7 +15,7 @@
             <p>语音案例</p>
         </div>
         
-        <img src="./resource/finance.png" class="finace">
+        <!-- <img src="./resource/finance.png" class="finace"> -->
         <p>智子电话机器人推出“机器人+人工”的协同外呼新模式，通话中只要是意向客户，机器可以实现转接人工模式，让优质客户享受最专业的服务，令沟通更高效。</p>
       </div>
     </div>

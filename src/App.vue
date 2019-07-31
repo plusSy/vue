@@ -3,7 +3,8 @@
     <!-- <img src="./assets/logo.png"> -->
     <div class="fl slide-bar">
       <h1>route</h1>
-      <el-button class="define-class" v-for="(item, index) in routeConfig" :key="index" @click="changeRoute(`/${item.link}`)">{{item.name}}</el-button>
+      <br><br>
+      <div class="define-class" v-for="(item, index) in routeConfig" :key="index" @click="changeRoute(`/${item.link}`)">{{item.name}}</div>
     </div>
     <div class="fr">
       <router-view></router-view>
@@ -28,7 +29,8 @@ export default {
         {link: 'tableMock', name: 'tableMock'},
         {link: 'templateRender', name: 'templateRender'},
         {link: 'echarts', name: 'echarts'},
-        {link: 'nest', name: 'nest'}
+        {link: 'nest', name: 'nest'},
+        {link: 'tableCheck', name: 'tableCheck'}
 
       ]
     }
@@ -57,20 +59,36 @@ export default {
 }
 .fl{
   float: left;
-  width: 10%;
+  width: 20%;
   height: 100%;
 }
 .fr{
   float: right;
-  width: 89%;
+  width: 79%;
   height: 100%;
 }
 .slide-bar{
   border-right: 1px solid #000;
   text-align: center;
+  background-color: rgb(64, 175, 226);
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 .define-class{
   margin-bottom: 10px;
   display: block;
+  height: 40px;
+  background-color: #fff;
+  line-height: 40px;
+  border: 1px solid #000;
+  width: 80%;
+  margin: 10px auto;
+  cursor: pointer;
+  font-size: 14px;
+}
+.define-class:hover{
+  background-color: #2c3e50;
+  color: #fff;
 }
 </style>

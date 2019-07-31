@@ -23,6 +23,7 @@ const Echarts = () => import('@/views/echarts')
 const TemplateRender = () => import('@/views/templateRender')
 const Nest = () => import('@/views/nest')
 const PageDetail = () => import('@/views/pageDetail')
+const TableCheck = () => import('@/views/tableCheck')
 
 const routes = [{
   path: '/',
@@ -115,6 +116,11 @@ const routes = [{
   path: '/pageDetail',
   name: 'pageDetail',
   component: PageDetail
+},
+{
+  path: '/tableCheck',
+  name: 'tableCheck',
+  component: TableCheck
 }
 ]
 
