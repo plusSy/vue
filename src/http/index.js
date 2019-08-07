@@ -14,8 +14,9 @@ if (data) {
   axios.defaults.headers.common['User-Id'] = user.userId
 }
 
+// 添加静态资源请求
 axios.get('static/config.json', {}).then(res => {
-  console.log('本地文件配置: ', res)
+  console.log('本地文件配置: ', res.data)
 })
 
 const interceptorUrl = (config, store) => {
