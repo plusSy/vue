@@ -14,6 +14,10 @@ if (data) {
   axios.defaults.headers.common['User-Id'] = user.userId
 }
 
+axios.get('static/config.json', {}).then(res => {
+  console.log('本地文件配置: ', res)
+})
+
 const interceptorUrl = (config, store) => {
   const { method, data } = config
   if (method === 'post') {
