@@ -7,6 +7,7 @@ import smite from './smite'
 import store from './store'
 import http from './http'
 import * as filters from './filter'
+import * as Directives from './directives'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 // 外部文件引用
@@ -29,6 +30,11 @@ Vue.use(ElementUI)
 
 Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key])
+})
+
+// 指令注册
+Object.keys(Directives).map(item => {
+  Vue.directive(item, Directives[item])
 })
 
 components.map(component => {

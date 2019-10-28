@@ -25,6 +25,8 @@ const Nest = () => import('@/views/nest')
 const PageDetail = () => import('@/views/pageDetail')
 const TableCheck = () => import('@/views/tableCheck')
 
+const Address = () => import('@/views/address/index.vue')
+
 const routes = [{
   path: '/',
   name: 'Hello',
@@ -121,6 +123,11 @@ const routes = [{
   path: '/tableCheck',
   name: 'tableCheck',
   component: TableCheck
+},
+{
+  path: '/address',
+  name: 'address',
+  component: Address
 }
 ]
 
