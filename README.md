@@ -9,3 +9,6 @@
   - 支持校验
   - 支持多种类型
 
+
+### git hook
+- plugin husky
