@@ -11,4 +11,4 @@
 
 
 ### git hook
-- plugin husky test
+- plugin husky
