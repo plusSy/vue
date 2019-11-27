@@ -18,6 +18,7 @@ export default {
   data () {
     return {
       routeConfig: [
+        {link: 'templateTest', name: 'templateTest'},
         {link: 'address', name: 'address'},
         {link: 'router', name: 'route'},
         {link: 'router/a', name: 'router/a'},

@@ -26,6 +26,7 @@ const PageDetail = () => import('@/views/pageDetail')
 const TableCheck = () => import('@/views/tableCheck')
 
 const Address = () => import('@/views/address/index.vue')
+const TemplateTest = () => import('@/views/templateTest/templateTest.vue')
 
 const routes = [{
   path: '/',
@@ -128,6 +129,11 @@ const routes = [{
   path: '/address',
   name: 'address',
   component: Address
+},
+{
+  path: '/templateTest',
+  name: 'templateTest',
+  component: TemplateTest
 }
 ]
 
