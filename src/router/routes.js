@@ -1,15 +1,10 @@
-const Hello = () =>
-  import('@/views/hello/index.vue')
-const Mocks = () =>
-  import('@/views/mock')
-const elementUI = () =>
-  import('@/views/elementUI')
-const newElement = () =>
-  import('@/views/newElement/newIndex')
-const NewMock = () =>
-  import('@/views/newMock')
-const ES6Demo = () =>
-  import('@/views/function/es6-demo/es6.vue')
+const Hello = () => import('@/views/hello/index.vue')
+const Mocks = () => import('@/views/mock')
+const elementUI = () => import('@/views/elementUI')
+const newElement = () => import('@/views/newElement/newIndex')
+const NewMock = () => import('@/views/newMock')
+const ES6Demo = () => import('@/views/function/es6-demo/es6.vue')
+
 const Validate = () => import('@/views/validate/index')
 const RouterCom = () => import('@/views/routerCom/index')
 const RouterComA = () => import('@/views/routerCom/child/a')
@@ -27,6 +22,8 @@ const TableCheck = () => import('@/views/tableCheck')
 
 const Address = () => import('@/views/address/index.vue')
 const TemplateTest = () => import('@/views/templateTest/templateTest.vue')
+
+const FromExample = () => import('@/views/fromExample/index.vue')
 
 const routes = [{
   path: '/',
@@ -134,6 +131,11 @@ const routes = [{
   path: '/templateTest',
   name: 'templateTest',
   component: TemplateTest
+},
+{
+  path: '/fromExample',
+  name: 'fromExample',
+  component: FromExample
 }
 ]
 

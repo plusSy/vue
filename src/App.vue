@@ -32,7 +32,8 @@ export default {
         {link: 'templateRender', name: 'templateRender'},
         {link: 'echarts', name: 'echarts'},
         {link: 'nest', name: 'nest'},
-        {link: 'tableCheck', name: 'tableCheck'}
+        {link: 'tableCheck', name: 'tableCheck'},
+        {link: 'fromExample', name: 'fromExample'}
 
       ]
     }
